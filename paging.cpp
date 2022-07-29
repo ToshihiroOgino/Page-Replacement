@@ -20,3 +20,7 @@ int base::process_queue(queue<Page> que) {
     }
     return count;
 }
+
+void base::enable_debug_mode() {
+    debug_mode = true;
+}
