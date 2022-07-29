@@ -1,2 +1,3 @@
-/a.exe
-/Page-Replacement.code-workspace
+*.exe
+*.code-workspace
+.vscode/
