@@ -22,10 +22,10 @@ bool LFU::browse_page(Page page) {
     if (pagefault) {
         page_table[idx] = page;
         page_info[idx] = 1;
-    }
-    if (debug_mode) {
-        printf("%2d:%c %c ", clock, page, pagefault ? 'O' : 'X');
-        print_page_table();
+        if (debug_mode) {
+            printf("%4d:%c %c ", clock, page, pagefault ? 'O' : 'X');
+            print_page_table();
+        }
     }
     return pagefault;
 }

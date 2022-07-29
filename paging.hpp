@@ -25,6 +25,7 @@ class base {
     void print_page_table();
     // @return int Page faultの発生回数
     int process_queue(queue<Page> que);
+    void enable_debug_mode();
     virtual bool browse_page(Page page) { return false; }
 };
 
